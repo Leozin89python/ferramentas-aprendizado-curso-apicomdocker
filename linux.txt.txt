@@ -1,0 +1,8 @@
+comandos:
+
+sudo -s
+lsb_release -a
+sudo lshw
+sudo apt-get update
+sudo apt install docker.io
+sudo apt remove docker docker-engine docker.io

@@ -1,0 +1,62 @@
+https://stackoverflow.com/questions/34243731/mongodb-cannot-start-server-the-default-storage-engine-wiredtiger-is-not-avai
+
+comandos:
+
+abra um prompt e digite um destes códigos,
+segundo os recursos de seu sistema
+
+
+
+/*código sem o erro*/
+
+mongod
+
+
+
+/*
+resolução 1
+este código é para um erro que há em máquinas x86
+sem o suporte necessário da engine*/
+
+mongod --dbpath [your-path]
+
+
+
+/*
+resolução 2
+este código é para um erro que há em máquinas x86
+sem o suporte necessário da engine*/
+
+C:\data\db
+
+
+
+
+
+
+
+
+ex:
+mongod
+mongod --storageEngine=mmapv1 --dbpath c:\data\db
+mongod --storageEngine=mmapv1 --dbpath c:\users\fulano\desktop\pasta\data\db
+
+
+
+
+
+
+um segundo prompt será aberto na pasta indicada
+
+caminho ex1:
+c:\data\db
+
+código:
+mongo
+
+
+caminho ex2:
+c:\users\fulano\desktop\pasta\data\db
+
+código:
+mongo
